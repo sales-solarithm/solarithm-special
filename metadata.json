@@ -1,0 +1,7 @@
+{
+  "name": "Solarithm Engineering Submission Studio",
+  "description": "Enterprise-grade solar engineering report and PDF submission studio with double-bordered technical drawings, shadow analysis, and structured engineering note libraries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

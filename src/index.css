@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-obsidian-950: #0E0E10;
+  --color-obsidian-900: #141416;
+  --color-obsidian-850: #18181B;
+  --color-obsidian-800: #27272A;
+  --color-obsidian-700: #3F3F46;
+
+  --color-gold: #D4AF37;
+  --color-gold-hover: #B89328;
+  --color-gold-dark: #C9A84C;
+  --color-gold-deep: #8A701E;
+  --color-gold-light: #F5DE88;
+
+  --color-amber-50: #FCF9EE;
+  --color-amber-100: #F7F1D8;
+  --color-amber-200: #EFE1B0;
+  --color-amber-300: #E5CE80;
+  --color-amber-400: #DCBE56;
+  --color-amber-500: #D4AF37;
+  --color-amber-600: #C9A84C;
+  --color-amber-700: #B89328;
+  --color-amber-800: #8A701E;
+  --color-amber-900: #524312;
+
+  --color-orange-400: #DCBE56;
+  --color-orange-500: #D4AF37;
+  --color-orange-600: #C9A84C;
+  --color-orange-700: #B89328;
+
+  --color-architect-pure: #FFFFFF;
+  --color-architect-soft: #F4F4F5;
+  --color-architect-zinc: #E4E4E7;
+  --color-architect-border: #D4D4D8;
+
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+:root {
+  --bg-surface: #FFFFFF;
+  --bg-canvas: #F4F4F5;
+  --bg-elevated: #E4E4E7;
+  --border-subtle: #E4E4E7;
+  --border-strong: #D4D4D8;
+  --text-primary: #18181B;
+  --text-secondary: #71717A;
+  --accent-gold: #C9A84C;
+}
+
+.dark {
+  --bg-surface: #18181B;
+  --bg-canvas: #0E0E10;
+  --bg-elevated: #27272A;
+  --border-subtle: #27272A;
+  --border-strong: #3F3F46;
+  --text-primary: #F4F4F5;
+  --text-secondary: #A1A1AA;
+  --accent-gold: #D4AF37;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(160, 160, 160, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.4);
+}
