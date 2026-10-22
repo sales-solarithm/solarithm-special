@@ -983,15 +983,6 @@ export async function generateReportPDF(
       pdf.triangle(hero_x + 62, 0, W, 0, W, H, 'F');
       pdf.triangle(hero_x + 62, 0, W, H, hero_x, H, 'F');
 
-      // Concentric geometric arcs inside gold panel (clean, no radial lines)
-      const ox_ = W + 40;
-      const oy_ = 625;
-      pdf.setDrawColor('#FEE898');
-      pdf.setLineWidth(0.9);
-      for (let r = 110; r < 1000; r += 58) {
-        pdf.circle(ox_, oy_, r, 'S');
-      }
-
       // Dividing Stripes between panels
       // Green stripe
       pdf.setFillColor(GREEN);

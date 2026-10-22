@@ -56,7 +56,7 @@ export const ProjectSpecsTab: React.FC<ProjectSpecsTabProps> = ({
       show: state.showEPCCompany,
       onValueChange: (val: string) => onChange({ introEPCCompany: val }),
       onToggleShow: (show: boolean) => onChange({ showEPCCompany: show }),
-      placeholder: 'e.g. SOLARITHM Design & Engineering Consultancy',
+      placeholder: 'e.g. Tirupati Sunmart & CO.',
       type: 'text',
     },
     {

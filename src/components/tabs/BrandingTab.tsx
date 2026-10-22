@@ -31,13 +31,13 @@ export const BrandingTab: React.FC<BrandingTabProps> = ({
 
   return (
     <div className="space-y-6 text-xs">
-      {/* 1. Client Company Logo - Rendered on drawings (Top-Right) */}
+      {/* 1. Drawing Logo (Top-Right) - Rendered exclusively on drawings & shadow pages */}
       <div className="space-y-3">
         <div className="flex items-center justify-between">
           <h4 className="font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider text-[11px] font-mono">
-            Client Company Logo
+            Drawing Logo (Top-Right)
           </h4>
-          <span className="text-[10px] text-zinc-400 font-mono">Rendered on drawings (Top-Right)</span>
+          <span className="text-[10px] text-zinc-400 font-mono">Drawing &amp; shadow pages</span>
         </div>
 
         {clientLogoDataUrl ? (
@@ -46,7 +46,7 @@ export const BrandingTab: React.FC<BrandingTabProps> = ({
               <div className="w-16 h-10 bg-white rounded-lg border border-zinc-200 dark:border-zinc-700 flex items-center justify-center p-1 overflow-hidden">
                 <img
                   src={clientLogoDataUrl}
-                  alt="Client Drawing Logo"
+                  alt="Drawing Canvas Logo"
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
@@ -85,7 +85,7 @@ export const BrandingTab: React.FC<BrandingTabProps> = ({
               <Upload className="w-4 h-4" />
             </div>
             <span className="font-semibold text-xs text-zinc-800 dark:text-zinc-200">
-              Upload Client Logo
+              Upload Drawing Logo
             </span>
           </div>
         )}
@@ -97,7 +97,7 @@ export const BrandingTab: React.FC<BrandingTabProps> = ({
             onChange={(e) => onToggleShowClientLogo(e.target.checked)}
             className="w-3.5 h-3.5 accent-[#D4AF37] cursor-pointer"
           />
-          <span>Include Client logo in PDF output</span>
+          <span>Include Drawing logo in PDF output</span>
         </label>
       </div>
 
@@ -155,7 +155,7 @@ export const BrandingTab: React.FC<BrandingTabProps> = ({
               <Upload className="w-4 h-4" />
             </div>
             <span className="font-semibold text-xs text-zinc-800 dark:text-zinc-200">
-              Upload Closing Page Logo
+              Upload Closing / Sign-Off Page Logo
             </span>
           </div>
         )}

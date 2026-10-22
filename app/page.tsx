@@ -46,7 +46,7 @@ export const createInitialStudioState = (): ProjectState => ({
   introInverterBrand: '',
   introPlantCapacity: '',
   introTiltAngle: '',
-  introEPCCompany: 'SOLARITHM Design & Engineering Consultancy',
+  introEPCCompany: '',
   showClientName: true,
   showDate: true,
   showNumPanels: true,
